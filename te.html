@@ -11,7 +11,7 @@
     #grid{border:5px solid gray; display:grid;
     grid-template-columns:13fr 1fr }
     div{border:5px solid cyan}
-    #jihobud{width:100px; height:100px}
+    #jihobud{width:100px; height:100px;}
   </style>
   </head>
   <body>
@@ -48,7 +48,25 @@
 <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
 </div>
 <!-- 시티 설치 코드 끝 -->
-      <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5edc553a4a7c6258179a12ef/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<input type="button" value="야간모드 (NIGHT MODE)" onclick="
+document.querySelector('body').style.backgroundColor='black';
+document.querySelector('img').style.display='none'
+document.querySelector('body').style.color='white';
+
+">
+<input type="button" value="주간모드 (DAY)" onclick="
+document.querySelector('body').style.backgroundColor='white';
+document.querySelector('body').style.color='black';
+document.querySelector('img').style.display='block'
+">
