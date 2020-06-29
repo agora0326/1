@@ -51,7 +51,7 @@ If you look back on your daily routine, aren’t you satisfied with your routine
 
         </div>
 
-      
+
 
 
 
@@ -69,6 +69,20 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+
+<input type="button" id="nightday" value="night" onclick="
+var target = document.querySelector('body');
+if (this.value === 'night'){
+target.style.backgroundColor='black';
+target.style.color='white';
+ this.value='day';
+}
+else{
+target.style.backgroundColor='white';
+target.style.color='black';
+this.value='night';
+}
+">
 
 
 

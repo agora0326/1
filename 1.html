@@ -7,6 +7,7 @@
     #center{font-size:30px}
     #bt{border-top: solid gray 3px}
     body{font-family:sans-serif;}
+    
 
   </style>
   </head>
@@ -39,18 +40,20 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
 
-<input type="button" value="야간모드 (NIGHT MODE)" onclick="
-document.querySelector('body').style.backgroundColor='black';
-document.querySelector('img').style.display='none'
-document.querySelector('body').style.color='white';
 
+<input type="button" id="nightday" value="night" onclick="
+var target = document.querySelector('body');
+if (this.value === 'night'){
+target.style.backgroundColor='black';
+target.style.color='white';
+ this.value='day';
+}
+else{
+target.style.backgroundColor='white';
+target.style.color='black';
+this.value='night';
+}
 ">
-<input type="button" value="주간모드 (DAY)" onclick="
-document.querySelector('body').style.backgroundColor='white';
-document.querySelector('body').style.color='black';
-document.querySelector('img').style.display='block'
-">
-
 
 
 
