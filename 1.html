@@ -7,9 +7,13 @@
     #center{font-size:30px}
     #bt{border-top: solid gray 3px}
     body{font-family:sans-serif;}
-    
+    #can{display: none}
+    #nightday{color: pink; border-width:20px; background-color:gray}
+
+
 
   </style>
+  <link rel="stylesheet" type="text/css" href="cssedit.html">
   </head>
   <body>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
@@ -23,7 +27,7 @@
 
 
     </ul>
-    <Center><img src="AGORA.png" id="img" width="300px" height="300px"> </center>
+    <Center><img src="AGORA.png" id="img" width="300px" height="300px"> <img src="logo of agora.png" id="can" width="300px" height="300px"> </center>
       <center> <h2 id="center">"AGORA WORLD" <h2> <center> <br>
         <center> <a href="te.html">월드포럼 바로가기 </a> </center>
         <!--Start of Tawk.to Script-->
@@ -41,19 +45,31 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
 
 
+<scipt>
+
+
 <input type="button" id="nightday" value="night" onclick="
-var target = document.querySelector('body');
+var korea = document.querySelector('body');
+var usa = document.querySelector('#img');
+var japan = document.querySelector('#can')
 if (this.value === 'night'){
-target.style.backgroundColor='black';
-target.style.color='white';
+korea.style.backgroundColor='black';
+korea.style.color='white';
+usa.style.display='none'
+japan.style.display='block'
+
+
  this.value='day';
 }
 else{
-target.style.backgroundColor='white';
-target.style.color='black';
+korea.style.backgroundColor='white';
+korea.style.color='black';
+usa.style.display='block'
+japan.style.display='none'
 this.value='night';
 }
 ">
+</script>
 
 
 

@@ -8,12 +8,16 @@
     #saying{border-style:ridge ;border-color:black}
     #jihod{color:blue}
     #king{color:gray;border-style:dotted; border-width:4px; border-color:black}
+    #can{display: none}
+    #nightday{color: pink; border-width:20px; background-color:gray; margin-top:40px}
+
 
   </style>
+  <link rel="stylesheet" type="text/css" href="cssedit.html">
   </head>
   <body>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <center> <h1 id="shinsongname"> <a href="1.html">AGORA</a>RULES</h1> </center>
+    <center> <h1 id="shinsongname"> <a href="1.html">AGORA</a> RULES</h1> </center>
 
     <ul class="jiho">
       <li><a href="rule.html">introducing community </a> (커뮤니티 소개)</li>
@@ -23,7 +27,7 @@
 
 
     </ul>
-    <Center><img src="AGORA.png" id="img" width="300px" height="300px"> </center>
+    <Center><img src="AGORA.png" id="img" width="300px" height="300px"> <img src="logo of agora.png" id="can" width="300px" height="300px"></center>
       <center> <h2 id="center">권리엔 책임이 따른다 <h2> <center><br>
         <ol id="king">
           <li>성희롱이나 욕설을 사용하면 아니됩니다. 사용한 사용자는 제제조치를 취하겠습니다</li>
@@ -45,15 +49,23 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
 <input type="button" id="nightday" value="night" onclick="
-var target = document.querySelector('body');
+var korea = document.querySelector('body');
+var usa = document.querySelector('#img');
+var japan = document.querySelector('#can')
 if (this.value === 'night'){
-target.style.backgroundColor='black';
-target.style.color='white';
+korea.style.backgroundColor='black';
+korea.style.color='white';
+usa.style.display='none'
+japan.style.display='block'
+
+
  this.value='day';
 }
 else{
-target.style.backgroundColor='white';
-target.style.color='black';
+korea.style.backgroundColor='white';
+korea.style.color='black';
+usa.style.display='block'
+japan.style.display='none'
 this.value='night';
 }
 ">

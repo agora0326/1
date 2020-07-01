@@ -8,11 +8,14 @@
     #saying{border-style:ridge ;border-color:black}
     #jihod{color:blue}
     #king{color:gray;border-style:dotted; border-width:4px; border-color:black}
-    #grid{border:5px solid gray; display:grid;
+    #grid{border:10px dotted solid gray; display:grid;
     grid-template-columns:13fr 1fr }
-    div{border:5px solid cyan}
+    div{border:0px solid cyan}
     #jihobud{width:100px; height:100px;}
+    #can{display: none}
+    #nightday{color: pink; border-width:20px; background-color:gray}
   </style>
+  <link rel="stylesheet" type="text/css" href="cssedit.html">
   </head>
   <body>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
@@ -29,7 +32,7 @@
     </ul>
 
     <div id="grid"> <div> <h1> CHATTING SYSTEM </h1> </div>
-                    <div> <a href="1.html"> <img src="AGORA.png" id="jihobud"> </a> </div>
+                    <div> <a href="1.html"> <h3> Mainpage </h3> </a> </div>
       <!-- 라이브리 시티 설치 코드 -->
 <div id="lv-container" data-id="city" data-uid="MTAyMC81MDM5Ni8yNjg4Ng==">
 	<script type="text/javascript">
@@ -61,15 +64,22 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 
 <input type="button" id="nightday" value="night" onclick="
-var target = document.querySelector('body');
+var korea = document.querySelector('body');
+var usa = document.querySelector('#img');
+var japan = document.querySelector('#can')
 if (this.value === 'night'){
-target.style.backgroundColor='black';
-target.style.color='white';
- this.value='day';
+korea.style.backgroundColor='black';
+korea.style.color='white';
+
+this.value='day';
 }
 else{
-target.style.backgroundColor='white';
-target.style.color='black';
+korea.style.backgroundColor='white';
+korea.style.color='black';
+
 this.value='night';
 }
 ">
+
+</body>
+</html>

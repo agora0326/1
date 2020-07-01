@@ -17,9 +17,11 @@
     #sovle{padding-left: 33px; border-left-style:dotted; border-width:1px}
     #CREW{padding-right:30px}
     #exm{border-bottom: solid 5px blue; margin-bottom:0}
-
+    #can{display: none}
+    #nightday{color: pink; border-width:20px; background-color:gray}
 
   </style>
+  <link rel="stylesheet" type="text/css" href="cssedit.html">
 </head>
 <body>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" >
@@ -71,17 +73,18 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
 
 <input type="button" id="nightday" value="night" onclick="
-var target = document.querySelector('body');
+var korea = document.querySelector('body');
+
 if (this.value === 'night'){
-target.style.backgroundColor='black';
-target.style.color='white';
- this.value='day';
+korea.style.backgroundColor='black';
+korea.style.color='white';
+this.value='day';
 }
 else{
-target.style.backgroundColor='white';
-target.style.color='black';
-this.value='night';
-}
+korea.style.backgroundColor='white';
+korea.style.color='black';
+this.value='night';}
+
 ">
 
 

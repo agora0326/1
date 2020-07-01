@@ -7,12 +7,15 @@
     #center{font-size:30px}
     #saying{border-style:ridge ;border-color:black}
     #jihod{color:blue}
+    #can{display: none}
+    #nightday{color: pink; border-width:20px; background-color:gray}
 
   </style>
+  <link rel="stylesheet" type="text/css" href="cssedit.html">
   </head>
   <body>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <center> <h1 id="shinsongname"> <a href="1.html">AGORA</a>WORLD</h1> </center>
+    <center> <h1 id="shinsongname"> <a href="1.html">AGORA</a> WORLD</h1> </center>
 
     <ul class="jiho">
       <li><a href="rule.html">introducing community </a> (커뮤니티 소개)</li>
@@ -22,7 +25,7 @@
 
 
     </ul>
-    <Center><img src="AGORA.png" id="img" width="300px" height="300px"> </center>
+    <Center><img src="AGORA.png" id="img" width="300px" height="300px"><img src="logo of agora.png" id="can" width="300px" height="300px"> </center>
       <center> <h2 id="center">세계를 향해 나아가는 우리의 토론 광장 "AGORA WORLD" <h2> <center><br>
         <p id="saying">아고라는 학생,성인,노인, 남녀 모두를 가리지 않고 모두 정치, 이슈, 연애등 다양한 분야의 논제에 있어
           자유로운 토론을 할 수 있도록 만든 최초의 SDN(SOCIAL DEBATING NETWORK) 입니다. 모든 사람들은 현재 준비된 WORLD FORUM 에서
@@ -37,19 +40,7 @@
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 
-  <input type="button" id="nightday" value="night" onclick="
-  var target = document.querySelector('body');
-  if (this.value === 'night'){
-  target.style.backgroundColor='black';
-  target.style.color='white';
-   this.value='day';
-  }
-  else{
-  target.style.backgroundColor='white';
-  target.style.color='black';
-  this.value='night';
-  }
-  ">
+
 s1.async=true;
 s1.src='https://embed.tawk.to/5edc553a4a7c6258179a12ef/default';
 s1.charset='UTF-8';
@@ -58,6 +49,28 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+
+<input type="button" id="nightday" value="night" onclick="
+var korea = document.querySelector('body');
+var usa = document.querySelector('#img');
+var japan = document.querySelector('#can')
+if (this.value === 'night'){
+korea.style.backgroundColor='black';
+korea.style.color='white';
+usa.style.display='none'
+japan.style.display='block'
+
+
+ this.value='day';
+}
+else{
+korea.style.backgroundColor='white';
+korea.style.color='black';
+usa.style.display='block'
+japan.style.display='none'
+this.value='night';
+}
+">
 
 
 
